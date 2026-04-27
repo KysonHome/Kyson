@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -12,20 +12,24 @@
 <div class="barwrap clearfix">
 	<ul class="navbar">
 		<li>
-			<a href="index.html">网站首页<b></b></a>
+			<a href="index.html"><span data-i18n="nav.home">网站首页</span><b></b></a>
 		</li>
 		<li class="on">
-			<a href="case.html">案例展示<b></b></a>
+			<a href="case.html"><span data-i18n="nav.case">案例展示</span><b></b></a>
 		</li>
 		<li>
-			<a href="present.html">商品展示<b></b></a>
+			<a href="present.html"><span data-i18n="nav.present">商品展示</span><b></b></a>
 		</li>
 	</ul>
 	<div class="div2">
 		<h3>
-			<strong>咨询服务热线</strong>
+			<strong data-i18n="header.hotline">咨询服务热线</strong>
 			<b>0551-888888888</b>
 		</h3>
+	</div>
+	<div class="lang-switch" role="group" aria-label="Language Switch">
+		<button type="button" class="lang-btn is-active" data-lang="zh">中</button>
+		<button type="button" class="lang-btn" data-lang="en">EN</button>
 	</div>
 </div>
 
@@ -34,8 +38,8 @@
          <img src="img/neibanner.jpg" alt="" />
     </figure>	
     <div class="text animate fadeInUp">
-    	<h3>PRODUCT center</h3>
-    	<h2>产品中心<b></b></h2>	        	
+	    <h3 data-i18n="banner.enTitle">PRODUCT center</h3>
+	    <h2><span data-i18n="banner.cnTitle">产品中心</span><b></b></h2>	        	
     </div>
 </div>
 
@@ -44,57 +48,39 @@
 		<ul class="animated">
 			<li>
 				<figure><img src="img/tu1.jpg"/></figure>
-				<p>
-					春日限定・柔序花束
-				</p>
+				<p data-i18n="list.item1">春日限定・柔序花束</p>
 			</li>
 			<li>
 				<figure><img src="img/tu2.jpg"/></figure>
-				<p>
-					夏季限定・清屿花束
-				</p>
+				<p data-i18n="list.item2">夏季限定・清屿花束</p>
 			</li>
 			<li>
 				<figure><img src="img/tu1.jpg"/></figure>
-				<p>
-					秋季限定・枫染花束
-				</p>
+				<p data-i18n="list.item3">秋季限定・枫染花束</p>
 			</li>
 			<li>
 				<figure><img src="img/tu2.jpg"/></figure>
-				<p>
-					冬日限定・暖叙花束
-				</p>
+				<p data-i18n="list.item4">冬日限定・暖叙花束</p>
 			</li>
 			<li>
 				<figure><img src="img/tu3.jpg"/></figure>
-				<p>
-					春季限定・青芜门挂
-				</p>
+				<p data-i18n="list.item5">春季限定・青芜门挂</p>
 			</li>
 			<li>
 				<figure><img src="img/tu4.jpg"/></figure>
-				<p>
-					夏季限定・浅汀门挂
-				</p>
+				<p data-i18n="list.item6">夏季限定・浅汀门挂</p>
 			</li>
 			<li>
 				<figure><img src="img/tu5.jpg"/></figure>
-				<p>
-					秋季限定・枫织门挂
-				</p>
+				<p data-i18n="list.item7">秋季限定・枫织门挂</p>
 			</li>
 			<li>
 				<figure><img src="img/tu3.jpg"/></figure>
-				<p>
-					冬季限定・霜禾门挂
-				</p>
+				<p data-i18n="list.item8">冬日限定・霜禾门挂</p>
 			</li>
 			<li>
 				<figure><img src="img/tu4.jpg"/></figure>
-				<p>
-					圣诞限定・颂景门挂
-				</p>
+				<p data-i18n="list.item9">圣诞限定・颂景门挂</p>
 			</li>
 		</ul>
 		
@@ -109,14 +95,14 @@
             
             <div class="taile">
             	<div class="sdha fl">
-                	<em>电话：<span>0556-888888888</span></em>
-                	<em>邮箱：<span>kuaixunec@outlook.com</span></em>
-                	<p>地址：<span>浙江省金华市义乌市福田街道福田三区52棟</span></p>
+	                <em><span data-i18n="footer.phone">电话：</span><span>0556-888888888</span></em>
+	                <em><span data-i18n="footer.email">邮箱：</span><span>kuaixunec@outlook.com</span></em>
+	                <p><span data-i18n="footer.address">地址：</span><span data-i18n="footer.addressValue">浙江省金华市义乌市福田街道福田三区52棟</span></p>
                 </div>
                 
                 <div class="ewma fr">
-                	<strong><img src="img/code.jpg"><span>官方微信公众号</span></strong>
-                	<strong><img src="img/code.jpg"><span>官方微博</span></strong>
+	                <strong><img src="img/code.jpg"><span data-i18n="footer.wechat">官方微信公众号</span></strong>
+	                <strong><img src="img/code.jpg"><span data-i18n="footer.weibo">官方微博</span></strong>
                 </div>		                    
             </div>	                
         </div>
@@ -125,5 +111,61 @@
 </div>
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/more.js"></script>
+<script>
+	window.pageI18n = {
+		defaultLang: 'zh',
+		translations: {
+			zh: {
+				title: 'Kyson Home',
+				'nav.home': '网站首页',
+				'nav.case': '案例展示',
+				'nav.present': '商品展示',
+				'header.hotline': '咨询服务热线',
+				'banner.enTitle': 'PRODUCT center',
+				'banner.cnTitle': '产品中心',
+				'list.item1': '春日限定・柔序花束',
+				'list.item2': '夏季限定・清屿花束',
+				'list.item3': '秋季限定・枫染花束',
+				'list.item4': '冬日限定・暖叙花束',
+				'list.item5': '春季限定・青芜门挂',
+				'list.item6': '夏季限定・浅汀门挂',
+				'list.item7': '秋季限定・枫织门挂',
+				'list.item8': '冬日限定・霜禾门挂',
+				'list.item9': '圣诞限定・颂景门挂',
+				'footer.phone': '电话：',
+				'footer.email': '邮箱：',
+				'footer.address': '地址：',
+				'footer.addressValue': '浙江省金华市义乌市福田街道福田三区52棟',
+				'footer.wechat': '官方微信公众号',
+				'footer.weibo': '官方微博'
+			},
+			en: {
+				title: 'Kyson Home',
+				'nav.home': 'Home',
+				'nav.case': 'Cases',
+				'nav.present': 'Products',
+				'header.hotline': 'Service Hotline',
+				'banner.enTitle': 'PRODUCT CENTER',
+				'banner.cnTitle': 'Product Gallery',
+				'list.item1': 'Spring Limited - Soft Rhythm Bouquet',
+				'list.item2': 'Summer Limited - Clear Isle Bouquet',
+				'list.item3': 'Autumn Limited - Maple Glow Bouquet',
+				'list.item4': 'Winter Limited - Warm Tale Bouquet',
+				'list.item5': 'Spring Limited - Green Meadow Wreath',
+				'list.item6': 'Summer Limited - Light Shore Wreath',
+				'list.item7': 'Autumn Limited - Maple Weave Wreath',
+				'list.item8': 'Winter Limited - Frost Field Wreath',
+				'list.item9': 'Christmas Limited - Holiday Glow Wreath',
+				'footer.phone': 'Phone: ',
+				'footer.email': 'Email: ',
+				'footer.address': 'Address: ',
+				'footer.addressValue': 'Building 52, Futian District 3, Futian Street, Yiwu, Jinhua, Zhejiang, China',
+				'footer.wechat': 'Official WeChat',
+				'footer.weibo': 'Official Weibo'
+			}
+		}
+	};
+</script>
+<script src="js/site-i18n.js"></script>
 </body>
 </html>

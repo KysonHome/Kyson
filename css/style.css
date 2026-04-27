@@ -44,6 +44,9 @@ transition: all 0.6s; width:100%; transform: scale(0);}
 .barwrap .div2 h3 img{ display: inline-block; margin-right: 20px; vertical-align: middle;}
 .barwrap .div2 strong{ display: block; font-size: 16px; color: #fff;  padding-bottom: 10px; line-height: 1;}
 .barwrap .div2 b{ display: block; font-size: 22px; color: #fff; font-family:segeo; line-height: 1;}
+.lang-switch{ display:flex; align-items:center; margin-left: 24px; gap: 8px; }
+.lang-btn{ width: 42px; height: 42px; border: 1px solid rgba(255,255,255,0.45); border-radius: 999px; background: transparent; color: #fff; font-size: 14px; cursor: pointer; transition: all 0.3s; }
+.lang-btn:hover,.lang-btn.is-active{ background: #E60012; border-color: #E60012; }
 
 /*搜索*/
 .barwrap .zoom{ cursor: pointer; display: inline-block; vertical-align: middle; margin-left:60px; }
@@ -253,6 +256,14 @@ animation: fadeInUp 1.5s; animation-delay: 0.3s;}
 .barwrap.on{ background: #fff; animation: down 1s; border-bottom: 1px solid #E0E0E0;}
 .barwrap.on li a,.barwrap.on .div2 strong,.barwrap.on .div2 b{ color: #000;}
 .barwrap.on .div2{ border-color: #E0E0E0;}
+.barwrap.on .lang-btn{ border-color: rgba(0,0,0,0.18); color: #000; }
+.barwrap.on .lang-btn:hover,.barwrap.on .lang-btn.is-active{ color: #fff; border-color: #E60012; }
+
+@media screen and (max-width: 1366px){
+    .barwrap{ padding: 0 20px; }
+    .navbar{ padding-right: 20px; }
+    .lang-switch{ margin-left: 16px; }
+}
 
 
 
